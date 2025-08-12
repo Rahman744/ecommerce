@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="{{ asset ('bootstrap/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset ('bootstrap/style.css') }}">
     <link rel="stylesheet" href="{{ asset ('bootstrap/icons/bootstrap-icons.min.css') }}">
+    <script src="{{ asset('bootstrap/bootstrap.bundle.min.js') }}"></script>
 </head>
 
 <body>
     <header class="bg-dark text-light">
-        <div class="py-1 small border-bottom">
+        <div class="py-1 small border-bottom-custom">
             <div class="container-xl d-flex justify-content-between">
                 <div>
                     Get 30% Off On Selected Items
@@ -25,68 +26,48 @@
             </div>
         </div>
         <div class="container-xl d-flex align-items-center justify-content-between py-3">
-            <h2>
+            <h3>
                 STORETAP<span class="text-danger">.</span>
-            </h2>
+            </h3>
             <form class="d-flex w-50">
                 <input type="search" name="" id="" class="form-control rounded-start-pill" placeholder="Search..." aria-label="Search">
                 <button class="btn btn-danger rounded-end-pill" type="submit">Search</button>
             </form>
-            <div class="">
-                <a href="#" class="text-secondary fw-semibold me-3" style="text-decoration: none;"><i class="bi bi-person h5 me-1"></i>My Account</a>
-                <a href="#" class="text-secondary fw-semibold" style="text-decoration: none;"><i class="bi bi-basket h5 me-1"></i>My Cart</a>
+            <div class="smal1">
+                <a href="#" class="text-light fw-semibold me-3" style="text-decoration: none;"><i class="bi bi-person h6 me-1"></i>My Account</a>
+                <a href="#" class="text-light fw-semibold" style="text-decoration: none;"><i class="bi bi-basket h6 me-1"></i>My Cart</a>
             </div>
         </div>
     </header>
+    <nav class="">
+        <div class="container-xl d-flex">
+            <div class="dropdown me-4">
+                <button class="btn btn-danger rounded-0 dropdown-toggle" type="button" id="categoriesDropdown" data-bs-toggle="dropdown">
+                    <i class="bi bi-list rounded-circle px-1" style="background-color: #CB031D;"></i> <span class="fw-semibold ">ALL CATEGORIES</span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a href="#" class="dropdown-item">Headphones</a></li>
+                    <li><a href="#" class="dropdown-item">Chair</a></li>
+                    <li><a href="#" class="dropdown-item dropdown-toggle">Accessories</a></li>
+                    <li><a href="#" class="dropdown-item">Handbag</a></li>
+                    <li><a href="#" class="dropdown-item">Jewellery</a></li>
+                    <li><a href="#" class="dropdown-item dropdown-toggle">Sofa</a></li>
+                    <li><a href="#" class="dropdown-item">Laptop</a></li>
+                    <li><a href="#" class="dropdown-item">Table Lamp</a></li>
+                    <li><a href="#" class="dropdown-item dropdown-toggle">Smartwatch</a></li>
+                    <li><a href="#" class="dropdown-item">Shoes</a></li>
+                </ul>
+            </div>
+            <ul class="nav fw-bold">
+                <li><a href="#" class="nav-link text-dark">HOME</a></li>
+                <li><a href="#" class="nav-link text-dark">TOP PRODUCT</a></li>
+                <li><a href="#" class="nav-link text-dark">DAILY DEAL</a></li>
+                <li><a href="#" class="nav-link text-dark">LATEST NEWS</a></li>
+                <li><a href="#" class="nav-link text-dark">ABOUT US</a></li>
+            </ul>
+            <a href="#" class="text-danger fw-bold ms-auto pt-2 smal1" style="text-decoration: none;"><i class="bi bi-percent me-1 rounded-circle px-1 bg-danger text-white"></i> SPECIAL OFFER</a>
+        </div>
+    </nav>
 </body>
 
 </html>
-            <!-- Search --
-            <form class="d-flex w-50">
-                <input class="form-control rounded-0" type="search" placeholder="Search..." aria-label="Search">
-                <button class="btn btn-danger rounded-0" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-
-    <!-- Navigation --
-    <nav class="border-bottom">
-        <div class="container d-flex align-items-center">
-            <!-- Categories dropdown --
-            <div class="dropdown me-4">
-                <button class="btn btn-danger dropdown-toggle" type="button" id="categoriesDropdown" data-bs-toggle="dropdown">
-                    <i class="fa fa-bars me-2"></i> ALL CATEGORIES
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="categoriesDropdown">
-                    <li><a class="dropdown-item" href="#">Headphones</a></li>
-                    <li><a class="dropdown-item" href="#">Chair</a></li>
-                    <li><a class="dropdown-item" href="#">Accessories</a></li>
-                    <li><a class="dropdown-item" href="#">Handbag</a></li>
-                    <li><a class="dropdown-item" href="#">Jewellery</a></li>
-                    <li><a class="dropdown-item" href="#">Sofa</a></li>
-                    <li><a class="dropdown-item" href="#">Laptop</a></li>
-                    <li><a class="dropdown-item" href="#">Table Lamp</a></li>
-                    <li><a class="dropdown-item" href="#">Smartwatch</a></li>
-                    <li><a class="dropdown-item" href="#">Shoes</a></li>
-                </ul>
-            </div>
-
-            <!-- Menu links --
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link text-dark" href="#">HOME</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="#">TOP PRODUCT</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="#">DAILY DEAL</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="#">LATEST NEWS</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="#">ABOUT US</a></li>
-            </ul>
-
-            <!-- Special offer --
-            <a href="#" class="ms-auto text-danger fw-bold"><i class="fa fa-bell me-1"></i> SPECIAL OFFER</a>
-        </div>
-    </nav>
-</header>
-
-<!-- Bootstrap & Font Awesome --
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">

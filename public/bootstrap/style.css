@@ -1,3 +1,11 @@
 .border-bottom-custom {
-    border-bottom: 2px solid #ff0000;
+    border-bottom: 2px solid rgb(87, 87, 87);
+}
+
+.header-margin-bottom {
+    margin-bottom: 5rem;
+}
+
+.smal1 {
+    font-size: 13px;
 }
