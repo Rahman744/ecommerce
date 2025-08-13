@@ -9,3 +9,12 @@
 .smal1 {
     font-size: 13px;
 }
+
+.hover {
+    color: white; /* начальный цвет */
+    text-decoration: none; /* убрать подчёркивание, если нужно */
+}
+
+.hover:hover {
+    color: red; /* цвет при наведении */
+}

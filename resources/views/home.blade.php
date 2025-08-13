@@ -1,7 +1,9 @@
 @extends('layout')
 
-@section('title')Home 8@endsection
+@section('title')Home @endsection
 
 @section('main_content')
-<h1>home</h1>
+<div class="container-xl text-info py-5 h1">
+    HOME
+</div>
 @endsection
