@@ -42,7 +42,7 @@
     <nav class="margin-top">
         <div class="container-xl d-flex">
             <div class="dropdown me-5">
-                <button class="btn btn-danger rounded-0 dropdown-toggle" type="button" id="categoriesDropdown" data-bs-toggle="dropdown">
+                <button class="btn btn-danger rounded-0 dropdown-toggle px-4 py-2" type="button" id="categoriesDropdown" data-bs-toggle="dropdown">
                     <i class="bi bi-list rounded-circle px-1" style="background-color: #CB031D;"></i> <span class="fw-semibold ">ALL CATEGORIES</span>
                 </button>
                 <ul class="dropdown-menu">
@@ -73,6 +73,8 @@
         @yield('main_content')
     </div>
 
+
+    
     <div class="bg-dark">
         <div class="container-xl">
             <div class="row text-light py-5">
@@ -115,11 +117,57 @@
                     </form>
                 </div>
             </div>
-            <hr>
-            <div class="row">
-                <div class="col-4">
-                    
+            <hr class="text-light">
+            <div class="row text-light">
+                <div class="col-4 mb-3">
+                    <div class="h5">PAYMENT</div>
+                    <div class="h3"><i class="bi bi-credit-card-2-back"></i><i class="bi bi-credit-card-2-back-fill ps-4"></i><i class="bi bi-credit-card-2-back ps-4"></i><i class="bi bi-credit-card-2-back-fill ps-4"></i></div>
                 </div>
+                <div class="col-4 py-4 text-center">
+                    <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" class="me-2" height="40">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" height="40">
+                </div>
+                <div class="col-4 mb-3 text-center text-md-end">
+                    <div class="pe-5 pb-2">
+                        <div class="pe-5">
+                            <h5 class="pe-5 ps-2">FOLLOW US</h5>
+                        </div>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#" class="text-dark me-3 bg-light p-2 rounded"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="text-dark me-3 bg-light p-2 rounded"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="text-dark me-3 bg-light p-2 rounded"><i class="bi bi-pinterest"></i></a>
+                        <a href="#" class="text-dark me-3 bg-light p-2 rounded"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="text-dark bg-light p-2 rounded"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-light">
+
+            <div class="text-center text-light py-2 ps-5 pe-5">
+                <a href="#" class="hover mx-2">Sofa</a> |
+                <a href="#" class="hover mx-2">Chair</a> |
+                <a href="#" class="hover mx-2">Dining Table</a> |
+                <a href="#" class="hover mx-2">Desk</a> |
+                <a href="#" class="hover mx-2">Table</a> |
+                <a href="#" class="hover mx-2">Lowline Tv Units</a> |
+                <a href="#" class="hover mx-2">Living Room</a> |
+                <a href="#" class="hover mx-2">Bathroom</a> |
+                <a href="#" class="hover mx-2">Stool</a> |
+                <a href="#" class="hover mx-2">Bedroom</a> |
+                <a href="#" class="hover mx-2">Table Lamp</a> |
+                <a href="#" class="hover mx-2">Computer Desk</a> |
+                <div class="pt-1">
+                    <a href="#" class="hover mx-2">Night Stand</a> |
+                    <a href="#" class="hover mx-2">Pillow</a> |
+                    <a href="#" class="hover mx-2">Night Stand</a> |
+                    <a href="#" class="hover mx-2">Pillow</a> |
+                    <a href="#" class="hover mx-2">Clock</a>
+                </div>
+            </div>
+            <hr class="border-light">
+            <div class="text-center mt-3 pb-3 text-light">
+                Copyright © 2025, Storetap-theme
             </div>
         </div>
     </div>

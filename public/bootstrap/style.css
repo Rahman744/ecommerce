@@ -11,10 +11,13 @@
 }
 
 .hover {
-    color: white; /* начальный цвет */
-    text-decoration: none; /* убрать подчёркивание, если нужно */
+    color: white;
+    text-decoration: none;
 }
-
 .hover:hover {
     color: red; /* цвет при наведении */
+}
+
+.w-80 {
+    width:81%!important
 }

@@ -3,7 +3,7 @@
 @section('title')Home @endsection
 
 @section('main_content')
-<div class="container-xl text-info py-5 h1">
-    HOME
+<div class="container-xl text-end">
+    <img src="{{ asset ('images/1.webp') }}" alt="" class="img-fluid w-80">
 </div>
 @endsection
