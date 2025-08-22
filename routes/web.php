@@ -1,11 +1,4 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\MainController;
-use App\Http\Controllers\CategoryController;
-
-Route::get('/', [MainController::class, 'home']);
-Route::get('/categories', [MainController::class, 'categories']);
-
-
-Route::get('/categories/show/{category}', [CategoryController::class, 'show'])->name('categories.show');
+require __DIR__.'/web_panel.php';
+require __DIR__.'/web_customer.php';
