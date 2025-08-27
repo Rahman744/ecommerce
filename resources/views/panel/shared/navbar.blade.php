@@ -9,6 +9,9 @@
         <li class="nav-item">
           <a class="nav-link {{ request()->routeIs('panel.categories.*') ? 'text-primary' : '' }}" aria-current="page" href="{{ route('panel.categories.index') }}">Categories</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link {{ request()->routeIs('panel.categories.*') ? 'text-primary' : '' }}" aria-current="page" href="{{ route('panel.categories.index') }}">Product</a>
+        </li>
       </ul>
     </div>
   </div>

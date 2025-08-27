@@ -7,7 +7,7 @@
     @csrf
     @method('PUT')
 
-    <h1>{{$errors}}</h1>
+    <!-- <h1>{{$errors}}</h1> -->
 
     <div class="row g-3">
         <div class="col-6">

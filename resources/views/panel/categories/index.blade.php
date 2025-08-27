@@ -5,7 +5,7 @@
 @section('content')
 <nav aria-label="breadcrumb">
     <ol class="breadcrumb">
-        <li class="breadcrumb-item"><a href="{{ route('panel.home') }}">Home</a></li>
+        <li class="breadcrumb-item"><a href="{{ route('panel.home') }}" style="text-decoration: none;" class="text-secondary fw-bolder">Home</a></li>
         <li class="breadcrumb-item active" aria-current="page">Categories</li>
     </ol>
 </nav>
