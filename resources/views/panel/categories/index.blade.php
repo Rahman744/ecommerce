@@ -15,11 +15,11 @@
         <form action="{{ url()->current() }}">
             <select name="per_page" id="per_page">
                 <option value="">Select per page</option>
-                <option value="10" @selected(request('per_page') == 10)>10</option>
-                <option value="25" @selected(request('per_page') == 25)>25</option>
-                <option value="50" @selected(request('per_page') == 50)>50</option>
-                <option value="75" @selected(request('per_page') == 75)>75</option>
-                <option value="100" @selected(request('per_page') == 100)>100</option>
+                <option value="10" @selected(request('per_page')==10)>10</option>
+                <option value="25" @selected(request('per_page')==25)>25</option>
+                <option value="50" @selected(request('per_page')==50)>50</option>
+                <option value="75" @selected(request('per_page')==75)>75</option>
+                <option value="100" @selected(request('per_page')==100)>100</option>
             </select>
         </form>
     </div>
@@ -67,9 +67,10 @@
                         </a>
                     </div>
                     <div>
-                        <form action="{{ route('panel.categories.destroy', $category) }}">
-                            <button class="btn btn-danger btn-sm">Delete</button>
-                        </form>
+                        <form action="{{ route('panel.categories.destroy', $category) }}" method="POST" style="display:inline;">
+                            @csrf
+                            @method('DELETE')
+                            <button type="sumbit" class="btn btn-danger btn-sm">Delete</button>
                     </div>
                 </div>
             </th>

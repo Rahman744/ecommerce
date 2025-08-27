@@ -12,7 +12,7 @@ class CategoryController extends Controller
     {
         $perPage = $request->per_page ?? 25;
 
-        $categories = Category::paginate($perPage);
+        $categories = Category::orderBy('id', 'desc')->paginate($perPage);
 
         return view('panel.categories.index', compact('categories'));
     }
@@ -37,16 +37,29 @@ class CategoryController extends Controller
 
     public function edit(Category $category)
     {
-        return view('panel.categories.edit', compact('category'));
+        return view('panel.categories.edit')->with([
+            'category' => $category
+        ]);
     }
 
-    public function update()
+    public function update(Request $request, Category $category) 
     {
+        $data = $request->validate([
+            'name' => 'required|string|max:255',
+            'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
+            'is_sale' => 'nullable|boolean',
+            'is_top' => 'nullable|boolean',
+        ]);
 
+        $category->update($data);
+
+        return to_route('panel.categories.index')->with('success', 'Category updated successfully');
     }
 
-    public function destroy()
+    public function destroy(Category $category)
     {
+        $category->delete();
 
+        return redirect()->route('panel.categories.index')->with('success', 'Category deleted');
     }
 }

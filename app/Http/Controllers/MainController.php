@@ -2,15 +2,15 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Category;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
 {
-    public function home() {
-        return view('home');
-    }
+    public function home() 
+    {
+        $categories = Category::where('is_top', 1)->get();
 
-    public function categories() {
-        return view('categories');
+        return view('home', compact('categories'));
     }
 }

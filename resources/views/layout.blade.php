@@ -39,35 +39,6 @@
             </div>
         </div>
     </header>
-    <nav class="margin-top">
-        <div class="container-xl d-flex">
-            <div class="dropdown me-5">
-                <button class="btn btn-danger rounded-0 dropdown-toggle px-4 py-2" type="button" id="categoriesDropdown" data-bs-toggle="dropdown">
-                    <i class="bi bi-list rounded-circle px-1" style="background-color: #CB031D;"></i> <span class="fw-semibold ">ALL CATEGORIES</span>
-                </button>
-                <ul class="dropdown-menu">
-                    <li><a href="#" class="dropdown-item">Headphones</a></li>
-                    <li><a href="#" class="dropdown-item">Chair</a></li>
-                    <li><a href="#" class="dropdown-item dropdown-toggle">Accessories</a></li>
-                    <li><a href="#" class="dropdown-item">Handbag</a></li>
-                    <li><a href="#" class="dropdown-item">Jewellery</a></li>
-                    <li><a href="#" class="dropdown-item dropdown-toggle">Sofa</a></li>
-                    <li><a href="#" class="dropdown-item">Laptop</a></li>
-                    <li><a href="#" class="dropdown-item">Table Lamp</a></li>
-                    <li><a href="#" class="dropdown-item dropdown-toggle">Smartwatch</a></li>
-                    <li><a href="#" class="dropdown-item">Shoes</a></li>
-                </ul>
-            </div>
-            <ul class="nav fw-bold">
-                <li><a href="/" class="nav-link text-dark">HOME</a></li>
-                <li><a href="" class="nav-link text-dark">TOP PRODUCT</a></li>
-                <li><a href="#" class="nav-link text-dark">DAILY DEAL</a></li>
-                <li><a href="#" class="nav-link text-dark">LATEST NEWS</a></li>
-                <li><a href="#" class="nav-link text-dark">ABOUT US</a></li>
-            </ul>
-            <a href="#" class="text-danger fw-bold ms-auto pt-2 smal1" style="text-decoration: none;"><i class="bi bi-percent me-1 rounded-circle px-1 bg-danger text-white"></i> SPECIAL OFFER</a>
-        </div>
-    </nav>
 
     <div>
         @yield('main_content')
