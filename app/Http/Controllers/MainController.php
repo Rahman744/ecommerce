@@ -11,6 +11,6 @@ class MainController extends Controller
     {
         $categories = Category::where('is_top', 1)->get();
 
-        return view('home', compact('categories'));
+        return view('customer.home', compact('categories'));
     }
 }
