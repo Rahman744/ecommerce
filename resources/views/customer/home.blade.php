@@ -14,7 +14,7 @@
 <body>
     <div>
         @include('customer.navbar')
-    </div>    
+    </div>
 
     <div class="margin-top">
         <div class="container-xl d-flex">
@@ -39,30 +39,34 @@
         </div>
     </div>
 
-    <div class="container-xl">
+    <div class="container">
         <div class="row">
             <div class="col-2"></div>
-            <div class="col-10">
+            <div class="col-10 ps-4">
                 <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="{{ asset('images/1.webp') }}" class="d-block w-100" alt="First Slide">
-                            <div class="carousel-caption text-start">
-                                <p>New Collections 2021</p>
-                                <h2>New Smart Phone</h2>
-                                <p>Startup Ecosystem Infrastructure Seeds Round Bandwidth Series A Financing</p>
-                                <a href="#" class="btn btn-danger">Shop Now</a>
+                            <div class="carousel-caption text-start" style="margin-left:-60px;">
+                                <div class="text-secondary h5">New Collections 2021</div>
+                                <div class="text-dark h1 fw-bolder">New Smart Phone</div>
+                                <div class="text-dark">Startup Ecosystem Infrastructure Seeds Round Bandwidth Series A Financing Project <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sed quod facilis <br> eligendi aliquam cupiditate.</div>
+                                <div class="py-5">
+                                    <a href="#" class="btn btn-danger fw-semibold">SHOP NOW</a>
+                                </div>
                             </div>
                         </div>
 
 
                         <div class="carousel-item">
                             <img src="{{ asset('images/2.jpg') }}" class="d-block w-100" alt="Second Slide">
-                            <div class="carousel-caption text-start">
-                                <p>Special Offer</p>
-                                <h2>Best Gadgets 2025</h2>
-                                <p>Latest Technology & Accessories Available Now</p>
-                                <a href="#" class="btn btn-danger">Shop Now</a>
+                            <div class="carousel-caption text-start" style="margin-left:-60px;">
+                                <div class="text-secondary h5">New Collections 2021</div>
+                                <div class="text-dark h1 fw-bolder">New Smart Phone</div>
+                                <div class="text-dark">Startup Ecosystem Infrastructure Seeds Round Bandwidth Series A Financing Project <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi sed quod facilis <br> eligendi aliquam cupiditate.</div>
+                                <div class="py-5">
+                                    <a href="#" class="btn btn-danger fw-semibold">SHOP NOW</a>
+                                </div>
                             </div>
                         </div>
 
@@ -78,6 +82,10 @@
             </div>
         </div>
 
+    </div>
+
+    <div>
+        <!-- .... -->
     </div>
 
     <div>
