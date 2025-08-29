@@ -29,6 +29,7 @@ class CategoryController extends Controller
             'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
             'is_sale' => 'nullable|boolean',
             'is_top' => 'nullable|boolean',
+            'top_category' => 'nullable|boolean',
         ]);
         Category::create($data);
 
@@ -42,13 +43,14 @@ class CategoryController extends Controller
         ]);
     }
 
-    public function update(Request $request, Category $category) 
+    public function update(Request $request, Category $category)
     {
         $data = $request->validate([
             'name' => 'required|string|max:255',
             'image' => 'nullable|image|mimes:jpg,jpeg,png,gif|max:2048',
             'is_sale' => 'nullable|boolean',
             'is_top' => 'nullable|boolean',
+            'top_category' => 'nullable|boolean',
         ]);
 
         $category->update($data);
@@ -58,8 +60,7 @@ class CategoryController extends Controller
 
     public function destroy(Category $category)
     {
-        $category->delete();
-
-        return redirect()->route('panel.categories.index')->with('success', 'Category deleted');
+        $category->delete(); // теперь soft delete
+        return to_route('panel.categories.index')->with('success', 'Category deleted');
     }
 }

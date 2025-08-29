@@ -21,15 +21,19 @@
                 <div class="invalid-feedback">{{ $message }}</div>
             @enderror
         </div>
+        <div class="col-4 form-check mt-2">
+            <input type="checkbox" class="form-check-input" id="is_top" name="is_top" {{ old('is_top') ? 'checked' : '' }}>
+            <label class="form-check-label" for="is_top">Is Top</label>
+        </div>
 
-        <div class="col-6 form-check mt-2">
+        <div class="col-4 form-check mt-2">
             <input type="checkbox" class="form-check-input" id="is_sale" name="is_sale" {{ old('is_sale') ? 'checked' : '' }}>
             <label class="form-check-label" for="is_sale">Is Sale</label>
         </div>
 
-        <div class="col-6 form-check mt-2">
-            <input type="checkbox" class="form-check-input" id="is_top" name="is_top" {{ old('is_top') ? 'checked' : '' }}>
-            <label class="form-check-label" for="is_top">Is Top</label>
+        <div class="col-4 form-check mt-2">
+            <input type="checkbox" class="form-check-input" id="top_category" name="top_category" {{ old('top_category') ? 'checked' : '' }}>
+            <label class="form-check-label" for="top_category">Top Category</label>
         </div>
     </div>
 

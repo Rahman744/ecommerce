@@ -36,7 +36,7 @@
             <th scope="col">Image</th>
             <th scope="col">Is Top</th>
             <th scope="col">Is Sale</th>
-            <th scope="col"></th>
+            <th scope="col">Top Category</th>
         </tr>
     </thead>
     <tbody>
@@ -59,6 +59,13 @@
                 <i class="h3 bi-x text-danger"></i>
                 @endif
             </th>
+            <th>
+                @if($category->top_category)
+                <i class="h3 bi-check text-success"></i>
+                @else
+                <i class="h3 bi-x text-danger"></i>
+                @endif
+            </th>
             <th class="text-end">
                 <div class="d-flex justify-content-end">
                     <div class="me-2">
@@ -67,10 +74,11 @@
                         </a>
                     </div>
                     <div>
-                        <form action="{{ route('panel.categories.destroy', $category) }}" method="POST" style="display:inline;">
+                        <form action="{{ route('panel.categories.destroy', $category->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this category?');">
                             @csrf
                             @method('DELETE')
-                            <button type="sumbit" class="btn btn-danger btn-sm">Delete</button>
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
                     </div>
                 </div>
             </th>

@@ -15,8 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('image')->nullable();
-            $table->boolean('is_sale')->default(false);
             $table->boolean('is_top')->default(false);
+            $table->boolean('is_sale')->default(false);
+            $table->boolean('top_category')->default(false);
+            $table->softDeletes();
             $table->timestamps();
         });
     }

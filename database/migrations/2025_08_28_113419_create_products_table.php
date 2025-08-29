@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('image')->default('default.png'); // <- добавлено
             $table->boolean('is_top')->default(false);
             $table->boolean('is_sale')->default(false);
+            $table->softDeletes(); // добавляет deleted_at
             $table->timestamps();
         });
     }

@@ -1,4 +1,4 @@
-<header class="bg-dark text-light">
+<nav class="bg-dark text-light">
     <div class="py-1 small border-bottom-custom">
         <div class="container-xl d-flex justify-content-between">
             <div>
@@ -24,4 +24,4 @@
             <a href="#" class="text-light fw-semibold" style="text-decoration: none;"><i class="bi bi-basket h6 me-1"></i>My Cart</a>
         </div>
     </div>
-</header>
+</nav>

@@ -81,7 +81,7 @@
                         </a>
                     </div>
                     <div>
-                        <form action="{{ route('panel.products.destroy', $product) }}" method="POST" style="display:inline;">
+                        <form action="{{ route('panel.products.destroy', $product->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this product?');">
                             @csrf
                             @method('DELETE')
                             <button type="submit" class="btn btn-danger btn-sm">Delete</button>

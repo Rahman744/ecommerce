@@ -18,8 +18,9 @@ class CategoryFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'is_sale' => $this->faker->boolean(90),
+            'is_sale' => $this->faker->boolean(50),
             'is_top' => $this->faker->boolean(50),
+            'top_category' => $this->faker->boolean(50),
         ];
     }
 }

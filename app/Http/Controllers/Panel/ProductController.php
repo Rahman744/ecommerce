@@ -76,8 +76,7 @@ class ProductController extends Controller
 
     public function destroy(Product $product)
     {
-        $product->delete();
-
+        $product->delete(); // теперь soft delete
         return to_route('panel.products.index')->with('success', 'Product deleted');
     }
 }
