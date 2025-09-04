@@ -84,8 +84,97 @@
 
     </div>
 
-    <div>
-        <!-- .... -->
+    <div class="container-xl">
+        <div class="row py-5">
+            <div class="col-4">
+                <a href="#"><img src="{{ asset('images/category/1.webp') }}" alt="category" class="img-fluid"></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><img src="{{ asset('images/category/2.webp') }}" alt="category" class="img-fluid"></a>
+            </div>
+            <div class="col-4">
+                <a href="#"><img src="{{ asset('images/category/3.webp') }}" alt="category" class="img-fluid"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl">
+        <div class="h5 fw-normal">
+            Top Category
+        </div>
+        <hr>
+        <div class="row text-center pt-3">
+            <div class="col-2">
+                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_1.jpg') }}" alt="category" class="img-fluid img-hover rounded-1">
+                    <h6 class="py-2">ACCESSORIES</h6>
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_2.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
+                    <h6 class="py-2">CHAIR</h6>
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_3.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
+                    <h6 class="py-2">HANDBAG</h6>
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_4.webp') }}" alt="category" class="img-fluid img-hover rounded-1">
+                    <h6 class="py-2">HEADPHONES</h6>
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_5.webp') }}" alt="category" class="img-fluid img-hover rounded-1">
+                    <h6 class="py-2">SHOES</h6>
+                </a>
+            </div>
+            <div class="col-2">
+                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_6.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
+                    <h6 class="py-2">SOFA</h6>
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-xl">
+        <div class="row py-5">
+            <div class="col-9">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="h5 fw-normal">
+                        Top Product
+                    </div>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="h6 text-danger" style="text-decoration: none;">Featured</a>
+                        <a href="#" class="h6 text-danger" style="text-decoration: none;">Latest</a>
+                        <a href="#" class="h6 text-danger" style="text-decoration: none;">Bestseller</a>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-3">
+                        <a href="#"><img src="{{ asset('images/product/top_p1') }}" alt="product"></a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-3">
+                <div class="p border border-danger rounded bg-lit">
+                    <div class="bg-danger py-3 h5 text-light ps-3">Daily Deal</div>
+                    <img src="{{ asset('images/product/daily_deal.webp') }}" alt="daily_deal" class="img-fluid">
+                    <div class="ps-2">
+                        <div class="fw-semibold">Nikon COOLPIX B600</div>
+                        <div class="fw-bold py-2">Rs. 552.00</div>
+                        <div class="fw-semibold">Deal ends in:</div>
+                        <div class="py-3">Expired</div>
+                    </div>
+                </div>
+                <div class="py-4">
+                    <a href="#"><img src="{{ asset('images/product/bravia.avif') }}" alt="bravia" class="img-fluid w-100 rounded"></a>
+                </div>
+            </div>
+        </div>
     </div>
 
     <div>

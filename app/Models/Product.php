@@ -19,8 +19,15 @@ class Product extends Model
         'category_id',
         'image',
         'is_top',
-        'is_sale'
+        'is_sale',
     ];
+
+    protected $casts = [
+        'is_top' => 'boolean',
+        'is_sale' => 'boolean',
+    ];
+
+
 
     public function category()
     {

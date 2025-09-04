@@ -60,14 +60,17 @@
         </div>
 
         <div class="col-6 form-check mt-2">
-            <input type="checkbox" class="form-check-input" id="is_sale" name="is_sale" {{ old('is_sale') ? 'checked' : '' }}>
-            <label class="form-check-label" for="is_sale">Is Sale</label>
+            <input type="hidden" name="is_top" value="0">
+            <input type="checkbox" class="form-check-input" id="is_top" name="is_top" value="1" {{ old('is_top') ? 'checked' : '' }}>
+            <label class="form-check-label" for="is_top">Is Top</label>
         </div>
 
         <div class="col-6 form-check mt-2">
-            <input type="checkbox" class="form-check-input" id="is_top" name="is_top" {{ old('is_top') ? 'checked' : '' }}>
-            <label class="form-check-label" for="is_top">Is Top</label>
+            <input type="hidden" name="is_sale" value="0">
+            <input type="checkbox" class="form-check-input" id="is_sale" name="is_sale" value="1" {{ old('is_sale') ? 'checked' : '' }}>
+            <label class="form-check-label" for="is_sale">Is Sale</label>
         </div>
+
     </div>
 
     <button class="btn btn-sm btn-primary mt-3">Create</button>

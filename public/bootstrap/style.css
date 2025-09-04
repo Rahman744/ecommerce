@@ -18,6 +18,27 @@
     color: red; /* цвет при наведении */
 }
 
+.hover-black {
+    color: black;
+    text-decoration: none;
+}
+
+.hover-black:hover {
+    color: red; /* цвет при наведении */
+}
+
 .w-80 {
     width:81%!important
+}
+
+.img-hover {
+    border: 1px solid rgb(201, 198, 198); 
+}
+
+.img-hover:hover {
+    border-color: red; 
+}
+
+.bg-lit {
+    background-color: #F6F6F6;
 }
