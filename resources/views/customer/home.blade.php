@@ -81,7 +81,6 @@
                 </div>
             </div>
         </div>
-
     </div>
 
     <div class="container-xl">
@@ -98,45 +97,66 @@
         </div>
     </div>
 
+
     <div class="container-xl">
-        <div class="h5 fw-normal">
-            Top Category
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="h5 fw-normal">Top Category</div>
+            <div>
+                <button class="btn btn-light hover-black rounded-circle me-1" id="prev"><i class="bi bi-chevron-left"></i></button>
+                <button class="btn btn-light hover-black rounded-circle" id="next"><i class="bi bi-chevron-right"></i></button>
+            </div>
         </div>
         <hr>
-        <div class="row text-center pt-3">
-            <div class="col-2">
-                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_1.jpg') }}" alt="category" class="img-fluid img-hover rounded-1">
-                    <h6 class="py-2">ACCESSORIES</h6>
-                </a>
-            </div>
-            <div class="col-2">
-                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_2.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
-                    <h6 class="py-2">CHAIR</h6>
-                </a>
-            </div>
-            <div class="col-2">
-                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_3.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
-                    <h6 class="py-2">HANDBAG</h6>
-                </a>
-            </div>
-            <div class="col-2">
-                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_4.webp') }}" alt="category" class="img-fluid img-hover rounded-1">
-                    <h6 class="py-2">HEADPHONES</h6>
-                </a>
-            </div>
-            <div class="col-2">
-                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_5.webp') }}" alt="category" class="img-fluid img-hover rounded-1">
-                    <h6 class="py-2">SHOES</h6>
-                </a>
-            </div>
-            <div class="col-2">
-                <a href="#" class="hover-black"><img src="{{ asset('images/category/top_6.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
-                    <h6 class="py-2">SOFA</h6>
-                </a>
-
+        <div class="position-relative">
+            <div class="overflow-hidden">
+                <div class="row flex-nowrap text-center pt-3" id="category-list" style="transition: transform 0.5s ease;">
+                    <div class="col-2">
+                        <a href="#" class="hover-black"><img src="{{ asset('images/category/top_1.jpg') }}" alt="category" class="img-fluid img-hover rounded-1">
+                            <h6 class="py-2">ACCESSORIES</h6>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="#" class="hover-black"><img src="{{ asset('images/category/top_2.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
+                            <h6 class="py-2">CHAIR</h6>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="#" class="hover-black"><img src="{{ asset('images/category/top_3.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
+                            <h6 class="py-2">HANDBAG</h6>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="#" class="hover-black"><img src="{{ asset('images/category/top_4.webp') }}" alt="category" class="img-fluid img-hover rounded-1">
+                            <h6 class="py-2">HEADPHONES</h6>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="#" class="hover-black"><img src="{{ asset('images/category/top_5.webp') }}" alt="category" class="img-fluid img-hover rounded-1">
+                            <h6 class="py-2">SHOES</h6>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="#" class="hover-black"><img src="{{ asset('images/category/top_6.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
+                            <h6 class="py-2">SOFA</h6>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="#" class="hover-black">
+                            <img src="{{ asset('images/category/top_7.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
+                            <h6 class="py-2">SMARTWATCH</h6>
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <a href="#" class="hover-black">
+                            <img src="{{ asset('images/category/top_8.avif') }}" alt="category" class="img-fluid img-hover rounded-1">
+                            <h6 class="py-2">LAPTOP</h6>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
 
     <div class="container-xl">
         <div class="row py-5">
@@ -152,9 +172,48 @@
                     </div>
                 </div>
                 <hr>
-                <div class="row">
+                <div class="row py-3">
                     <div class="col-3">
-                        <a href="#"><img src="{{ asset('images/product/top_p1') }}" alt="product"></a>
+                        <a href="#"><img src="{{ asset('images/product/top_p1.webp') }}" alt="product" class="img-fluid"></a>
+                        <div class="ps-2 pt-2">Samsung Galaxy Tablet</div>
+                        <div class="fw-bolder ps-2 pt-1">Rs. 996.00</div>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><img src="{{ asset('images/product/top_p2.webp') }}" alt="product" class="img-fluid"></a>
+                        <div class="ps-2 pt-2">Samsung Galaxy Tablet</div>
+                        <div class="fw-bolder ps-2 pt-1">Rs. 996.00</div>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><img src="{{ asset('images/product/top_p3.webp') }}" alt="product" class="img-fluid"></a>
+                        <div class="ps-2 pt-2">Samsung Galaxy Tablet</div>
+                        <div class="fw-bolder ps-2 pt-1">Rs. 996.00</div>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><img src="{{ asset('images/product/top_p4.webp') }}" alt="product" class="img-fluid"></a>
+                        <div class="ps-2 pt-2">Samsung Galaxy Tablet</div>
+                        <div class="fw-bolder ps-2 pt-1">Rs. 996.00</div>
+                    </div>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-3">
+                        <a href="#"><img src="{{ asset('images/product/top_p5.webp') }}" alt="product" class="img-fluid"></a>
+                        <div class="ps-2 pt-2">Samsung Galaxy Tablet</div>
+                        <div class="fw-bolder ps-2 pt-1">Rs. 996.00</div>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><img src="{{ asset('images/product/top_p6.webp') }}" alt="product" class="img-fluid"></a>
+                        <div class="ps-2 pt-2">Samsung Galaxy Tablet</div>
+                        <div class="fw-bolder ps-2 pt-1">Rs. 996.00</div>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><img src="{{ asset('images/product/top_p7.webp') }}" alt="product" class="img-fluid"></a>
+                        <div class="ps-2 pt-2">Samsung Galaxy Tablet</div>
+                        <div class="fw-bolder ps-2 pt-1">Rs. 996.00</div>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><img src="{{ asset('images/product/top_p8.webp') }}" alt="product" class="img-fluid"></a>
+                        <div class="ps-2 pt-2">Samsung Galaxy Tablet</div>
+                        <div class="fw-bolder ps-2 pt-1">Rs. 996.00</div>
                     </div>
                 </div>
 
@@ -177,9 +236,41 @@
         </div>
     </div>
 
+    <div class="container-xl pb-5">
+        <img src="{{ asset('images/banner.webp') }}" alt="" class="img-fluid">
+    </div>
+
+    
+
     <div>
         @include('customer.footer')
     </div>
+
+
+    <script>
+        const list = document.getElementById("category-list");
+        const items = list.children;
+        const itemWidth = items[0].offsetWidth; // ширина одной категории
+        let position = 0;
+
+        document.getElementById("next").addEventListener("click", () => {
+            if (position > -(items.length - 6) * itemWidth) {
+                position -= itemWidth;
+            } else {
+                position = 0; // возвращаем в начало
+            }
+            list.style.transform = `translateX(${position}px)`;
+        });
+
+        document.getElementById("prev").addEventListener("click", () => {
+            if (position < 0) {
+                position += itemWidth;
+            } else {
+                position = -(items.length - 6) * itemWidth; // прыгаем в конец
+            }
+            list.style.transform = `translateX(${position}px)`;
+        });
+    </script>
 
 </body>
 
