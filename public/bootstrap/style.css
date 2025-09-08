@@ -14,29 +14,35 @@
     color: white;
     text-decoration: none;
 }
+
 .hover:hover {
-    color: red; /* цвет при наведении */
+    color: red;
+    /* цвет при наведении */
+}
+
+a {
+    text-decoration: none;
+    /* убираем подчёркивание у всех ссылок */
 }
 
 .hover-black {
     color: black;
-    text-decoration: none;
 }
 
 .hover-black:hover {
-    color: red; /* цвет при наведении */
+    color: red;
 }
 
 .w-80 {
-    width:81%!important
+    width: 81% !important
 }
 
 .img-hover {
-    border: 1px solid rgb(201, 198, 198); 
+    border: 1px solid rgb(201, 198, 198);
 }
 
 .img-hover:hover {
-    border-color: red; 
+    border-color: red;
 }
 
 .bg-lit {
